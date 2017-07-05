@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Monitor</title>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var title = $("#title");
+            var messages = $("#messages");
+
+            var socket = new SockJS('/stomp');
+            var stompClient = Stomp.over(socket);
+            stompClient.connect({ }, function(frame) {
+                title.append("websocket connection established");
+
+                stompClient.subscribe("/topic/activity-monitor", function(data) {
+                    messages.append("<li>" + data.body + "</li>");
+                });
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="title"></p>
+    <ul id="messages"></ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+package hu.suliatis;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class ActivityMonitorController {
+
+    @RequestMapping(value = "/activity-monitor", method = RequestMethod.GET)
+    String activityMonitor() {
+        return "monitor.html";
+    }
+}

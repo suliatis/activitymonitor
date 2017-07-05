@@ -17,7 +17,7 @@ public class HibernateRegisterListener {
     private EntityManagerFactory entityManagerFactory;
 
     @Autowired
-    private AuditEventListener auditEventListener;
+    private ActivityMonitor auditEventListener;
 
     @PostConstruct
     public void registerListeners() {
