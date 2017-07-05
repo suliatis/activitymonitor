@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.data;
 
 import org.springframework.data.repository.CrudRepository;
 

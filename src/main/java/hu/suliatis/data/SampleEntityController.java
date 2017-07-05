@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-public class SampleController {
+public class SampleEntityController {
 
     @Autowired
     private SampleEntityRepository repository;

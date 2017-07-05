@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.monitor;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

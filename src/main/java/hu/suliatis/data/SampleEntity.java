@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

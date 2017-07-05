@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.monitor;
 
 import org.hibernate.event.service.spi.EventListenerRegistry;
 import org.hibernate.event.spi.EventType;
@@ -12,7 +12,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceUnit;
 
 @Component
-public class HibernateRegisterListener {
+public class ActivityMonitorRegister {
     @PersistenceUnit
     private EntityManagerFactory entityManagerFactory;
 

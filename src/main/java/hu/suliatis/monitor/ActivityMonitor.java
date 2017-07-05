@@ -1,4 +1,4 @@
-package hu.suliatis;
+package hu.suliatis.monitor;
 
 import org.hibernate.event.spi.PostInsertEvent;
 import org.hibernate.event.spi.PostInsertEventListener;
