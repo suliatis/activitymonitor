@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class AnyEntity {
+public class SampleEntity {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -20,5 +20,13 @@ public class AnyEntity {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    @Override
+    public String toString() {
+        return "SampleEntity{" +
+                "id=" + id +
+                ", text='" + text + '\'' +
+                '}';
     }
 }
